@@ -1,6 +1,6 @@
 *.swp
 *.map
-src
+/src
 jsdoc.json
 tsconfig.json
 
@@ -125,3 +125,9 @@ out
 *.css.map
 *.sass.map
 *.scss.map
+
+# templates
+template-javascript/package-lock.json
+template-typescript/package-lock.json
+template-javascript/node_modules
+template-typescript/node_modules
