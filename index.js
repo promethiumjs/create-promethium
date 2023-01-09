@@ -105,7 +105,7 @@ function init() {
         const pkgManager = pkgInfo ? pkgInfo.name : "npm";
         const isYarn1 = pkgManager === "yarn" && (pkgInfo === null || pkgInfo === void 0 ? void 0 : pkgInfo.version.startsWith("1."));
         console.log(`\nBootstrapping project in ${root}...`);
-        const templateDir = path.resolve(fileURLToPath(import.meta.url), "../..", `template-${template}`);
+        const templateDir = path.resolve(fileURLToPath(import.meta.url), "..", `template-${template}`);
         const write = (file, content) => {
             var _a;
             const targetPath = path.join(root, (_a = renameFiles[file]) !== null && _a !== void 0 ? _a : file);
@@ -117,7 +117,7 @@ function init() {
             }
         };
         const files = fs.readdirSync(templateDir);
-        for (const file of files.filter((f) => f !== "package.json" && f !== "node_modules")) {
+        for (const file of files.filter((f) => f !== "package.json" && f !== "node_modules" && f !== "package-lock.json")) {
             write(file);
         }
         const pkg = JSON.parse(fs.readFileSync(path.join(templateDir, `package.json`), "utf-8"));

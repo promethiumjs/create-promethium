@@ -130,7 +130,7 @@ async function init() {
 
   const templateDir = path.resolve(
     fileURLToPath(import.meta.url),
-    "../..",
+    "..",
     `template-${template}`
   );
 
@@ -145,7 +145,8 @@ async function init() {
 
   const files = fs.readdirSync(templateDir);
   for (const file of files.filter(
-    (f) => f !== "package.json" && f !== "node_modules"
+    (f) =>
+      f !== "package.json" && f !== "node_modules" && f !== "package-lock.json"
   )) {
     write(file);
   }
