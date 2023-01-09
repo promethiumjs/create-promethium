@@ -117,7 +117,7 @@ function init() {
             }
         };
         const files = fs.readdirSync(templateDir);
-        for (const file of files.filter((f) => f !== "package.json")) {
+        for (const file of files.filter((f) => f !== "package.json" && f !== "node_modules")) {
             write(file);
         }
         const pkg = JSON.parse(fs.readFileSync(path.join(templateDir, `package.json`), "utf-8"));

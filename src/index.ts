@@ -144,7 +144,9 @@ async function init() {
   };
 
   const files = fs.readdirSync(templateDir);
-  for (const file of files.filter((f) => f !== "package.json")) {
+  for (const file of files.filter(
+    (f) => f !== "package.json" && f !== "node_modules"
+  )) {
     write(file);
   }
 
