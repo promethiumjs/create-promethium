@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -124,11 +126,11 @@ async function init() {
   const pkgManager = pkgInfo ? pkgInfo.name : "npm";
   const isYarn1 = pkgManager === "yarn" && pkgInfo?.version.startsWith("1.");
 
-  console.log(`\nScaffolding project in ${root}...`);
+  console.log(`\nBootstrapping project in ${root}...`);
 
   const templateDir = path.resolve(
     fileURLToPath(import.meta.url),
-    "..",
+    "../..",
     `template-${template}`
   );
 
