@@ -2,7 +2,7 @@
 *.map
 /src
 jsdoc.json
-tsconfig.json
+/tsconfig.json
 
 # Logs
 logs
