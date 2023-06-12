@@ -12,6 +12,6 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "promethium-js": "^0.3.0"
+    "promethium-js": "^0.4.0"
   }
 }
