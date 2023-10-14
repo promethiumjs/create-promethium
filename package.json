@@ -1,7 +1,7 @@
 {
-  "name": "create-promethium-app",
-  "version": "0.1.4",
-  "description": "Bootstrap a new Promethium app with ease",
+  "name": "create-promethium",
+  "version": "0.0.1",
+  "description": "The easiest way to create a new PromethiumJS application",
   "bin": "./index.js",
   "type": "module",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/promethiumjs/create-promethium-app.git"
+    "url": "git+https://github.com/promethiumjs/create-promethium.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/promethiumjs/create-promethium-app/issues"
+    "url": "https://github.com/promethiumjs/create-promethium/issues"
   },
-  "homepage": "https://github.com/promethiumjs/create-promethium-app#readme",
+  "homepage": "https://github.com/promethiumjs/create-promethium#readme",
   "keywords": [
     "frontend",
     "UI",
