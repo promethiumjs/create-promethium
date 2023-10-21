@@ -13,6 +13,6 @@
   },
   "dependencies": {
     "lit": ">=2.0.0",
-    "promethium-js": "*"
+    "promethium-js": "0.7.0"
   }
 }

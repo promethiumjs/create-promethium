@@ -129,5 +129,12 @@ out
 # templates
 template-javascript/package-lock.json
 template-typescript/package-lock.json
+template-javascript/pnpm-lock.yaml
+template-typescript/pnpm-lock.yaml
+template-javascript/yarn.lock
+template-typescript/yarn.lock
 template-javascript/node_modules
 template-typescript/node_modules
+
+# testing
+test-promethium-app

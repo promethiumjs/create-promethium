@@ -9,11 +9,11 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "typescript": "^5.0.2",
+    "typescript": "^5.2.2",
     "vite": "^4.3.9"
   },
   "dependencies": {
     "lit": ">=2.0.0",
-    "promethium-js": "*"
+    "promethium-js": "0.7.0"
   }
 }

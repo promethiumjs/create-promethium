@@ -1,5 +1,6 @@
-import { render } from "promethium-js";
+import { h, renderTemplateFn } from "promethium-js";
+import { html } from "lit";
 import App from "./App";
 import "./index.css";
 
-render(App, { renderContainer: "body" });
+renderTemplateFn(() => html`${h(App)}`, { renderContainer: "body" });
