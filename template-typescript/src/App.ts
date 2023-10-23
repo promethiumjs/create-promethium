@@ -2,7 +2,7 @@ import { html } from "lit";
 import { styleMap } from "lit/directives/style-map.js";
 import { adaptState } from "promethium-js";
 
-const App = () => {
+function App() {
   const [count, setCount] = adaptState(0);
 
   const fontStyles = {
@@ -39,29 +39,28 @@ const App = () => {
     fontWeight: "600",
   };
 
-  return () =>
-    html`
-      <div style=${styleMap(containerStyles)}>
-        <h1 style=${styleMap({ ...fontStyles, ...headerStyles })}>Counter</h1>
-        <div>
-          <button
-            style=${styleMap({ ...fontStyles, ...buttonStyles })}
-            @click=${() => setCount((count) => count - 1)}
-          >
-            -
-          </button>
-          <span style=${styleMap({ ...fontStyles, ...textStyles })}
-            >${count()}</span
-          >
-          <button
-            style=${styleMap({ ...fontStyles, ...buttonStyles })}
-            @click=${() => setCount((count) => count + 1)}
-          >
-            +
-          </button>
-        </div>
+  return () => html`
+    <div style=${styleMap(containerStyles)}>
+      <h1 style=${styleMap({ ...fontStyles, ...headerStyles })}>Counter</h1>
+      <div>
+        <button
+          style=${styleMap({ ...fontStyles, ...buttonStyles })}
+          @click=${() => setCount((count) => count - 1)}
+        >
+          -
+        </button>
+        <span style=${styleMap({ ...fontStyles, ...textStyles })}
+          >${count()}</span
+        >
+        <button
+          style=${styleMap({ ...fontStyles, ...buttonStyles })}
+          @click=${() => setCount((count) => count + 1)}
+        >
+          +
+        </button>
       </div>
-    `;
-};
+    </div>
+  `;
+}
 
 export default App;
