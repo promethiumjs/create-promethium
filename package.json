@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "pnpm run build",
     "init:test": "rimraf test-promethium-app && node index.js test-promethium-app",
     "install:test": "cd test-promethium-app && pnpm install",
     "start:test": "cd test-promethium-app && pnpm run dev",
