@@ -135,6 +135,8 @@ template-javascript/yarn.lock
 template-typescript/yarn.lock
 template-javascript/node_modules
 template-typescript/node_modules
+template-javascript/dist
+template-typescript/dist
 
 # testing
 test-promethium-app
