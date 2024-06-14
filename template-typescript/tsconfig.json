@@ -15,6 +15,11 @@
 
     /* Linting */
     "strict": true,
+    "plugins": [
+      {
+        "name": "ts-lit-plugin"
+      }
+    ],
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
@@ -23,7 +28,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+
+    /* JSX */
+    "jsx": "react-jsx",
+    "jsxImportSource": "promethium-js"
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
