@@ -1,6 +1,6 @@
 {
   "name": "create-promethium",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "The easiest way to create a new PromethiumJS application",
   "bin": "./index.js",
   "type": "module",
